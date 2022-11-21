@@ -1,0 +1,109 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: black;
+}
+div{
+	display: grid;
+	margin: 1rem;
+	width: 60%;
+}
+#lg1{
+	background: rebeccapurple;
+	animation: lg1 6s forwards;
+	padding: 0.5rem;
+	margin: 0.3rem
+}
+#lg2{
+	background: darkblue;
+	animation: lg2 6s forwards;
+	padding: 0.5rem;
+	margin: 0.3rem
+}
+#lg3{
+	background: red;
+	animation: lg3 6s forwards;
+	padding: 0.5rem;
+	margin: 0.3rem
+}
+#lg4{
+	background: fuchsia;
+	animation: lg4 6s forwards;
+	padding: 0.5rem;
+	margin: 0.3rem
+}
+#lg5{
+	background: orange;
+	animation: lg5 6s forwards;
+	padding: 0.5rem;
+	margin: 0.3rem
+}
+#lg6{
+	background:pink;
+	animation: lg6 6s forwards;
+	padding: 0.5rem;
+	margin: 0.3rem
+}
+#lg7{
+	background:green;
+	animation: lg7 6s forwards;
+	padding: 0.5rem;
+	margin: 0.3rem
+}
+@keyframes lg1{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 90%;
+		color:white;
+	}
+}@keyframes lg2{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 30%;
+		color:white;
+	}
+}@keyframes lg3{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 20%;
+		color:white;
+	}
+}@keyframes lg4{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 50%;
+		color:white;
+	}
+}@keyframes lg5{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 80%;
+		color:white;
+	}
+}@keyframes lg6{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+		color:white;
+	}
+}@keyframes lg7{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 60%;
+		color:white;
+	}
+}

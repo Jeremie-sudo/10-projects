@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>calculatrice</title>
+	<style>
+		body{
+		display: grid;
+		justify-content: center;
+		}
+		.calc{
+			background: black;
+			height: 20rem;
+			width: 15rem;
+			display: grid;
+			border: 5px black solid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(6, 1fr);
+			grid-template-areas:
+			"scr scr scr scr"
+			"9   8   7   on"
+			"6   5   4   cl"
+			"3   2   1   cl"
+			"0   mns  add  div"
+			"dt  mlt  eq  eq";
+		    
+
+		}
+		.btn{
+			color: white;
+			background: black;
+			border: 1px solid white;
+		}
+		#on{
+			grid-area:on;
+			background: red;
+			border: 1px solid white;
+		}
+		#cl{
+			grid-area:cl;
+			background: orange;
+			border: 1px solid white;
+		}
+		#eq{
+			grid-area:eq;
+			background:green;
+			border: 1px solid white;
+		}
+		.scr{
+			background:white;
+			height:px;
+			width:100%;
+			grid-area:scr;
+			border-radius: 10px;
+            margin: 5px auto;
+            padding: 2px;
+            text-align: right;
+            font-size: 30px;
+		}
+		
+	</style>
+</head>
+<body>
+
+	    <div class="calc">
+	    	<div class="scr">
+	    		
+	    	</div>
+	    	<button class="btn" id="9">9</button>
+	    	<button class="btn" id="8">8</button>
+	    	<button class="btn" id="7">7</button>
+	    	<button class="btn" id="6">6</button>
+	    	<button class="btn" id="5">5</button>
+	    	<button class="btn" id="4">4</button>
+	    	<button class="btn" id="3">3</button>
+	    	<button class="btn" id="2">2</button>
+	    	<button class="btn" id="1">1</button>
+	    	<button class="btn" id="0">0</button>
+	    	<button class="btn" id="*">*</button>
+	    	<button class="btn" id="+">+</button>
+	    	<button class="btn" id="-">-</button>
+	    	<button class="btn" id="-">.</button>
+	    	<button class="btn" id="/">/</button>
+	    	<button  id="on">ON/OFF</button>
+	    	<button  id="cl">C</button>
+	    	<button  id="eq">=</button>
+	    	
+	    </div>
+
+	<script>
+		btns = document.querySelectorAll(".btn");
+		scr = document.querySelector('.scr');
+		cl = document.querySelector('#cl');
+		on = document.querySelector('#on');
+		eq = document.querySelector('#eq');
+	 const son = ()=>{
+	 	  audio = new Audio();
+	 	  audio.src="ring.mp3";
+	 	  audio.play();
+	 }
+
+     btns.forEach((button)=>{
+         button.addEventListener('click',(e)=>{
+         	son();
+         	scr.textContent+=e.target.id ;
+         })
+
+     })
+      eq.addEventListener('click',()=>{
+      	scr.textContent = eval(scr.textContent)
+      })
+
+      cl.addEventListener('click',()=>{
+      	scr.textContent =""
+      })
+      on.addEventListener('click',()=>{
+      	scr.style.background ="gray";
+      })
+
+		
+	</script>
+</body>
+</html>

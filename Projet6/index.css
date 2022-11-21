@@ -1,0 +1,39 @@
+body{
+	background: black;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	color:white;
+}
+.container{
+	position: absolute;
+    top: 23px;
+	width:300px;
+	border: 1px solid cyan;
+	padding: 1rem;
+}
+input{
+	outline:none;
+	border-radius:12px;
+	height:1.5rem;
+	border: 2px solid cyan;
+	width: 100%;
+}
+.client{
+	
+	display:flex;
+	transition: 0.8s;
+
+
+}
+.client h4{
+	 margin-top:2.5rem;
+
+}
+
+ .client img{
+	border-radius:50%;
+	height:4rem;
+	margin: 1rem;
+}

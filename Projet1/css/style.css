@@ -1,0 +1,129 @@
+body{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  
+}
+#background{
+	top: 0;
+	background:url(../images/letter-bg.jpg) no-repeat;
+	background-size: cover;
+	height:100vh;
+	width:100%;
+	position:fixed;
+
+
+}
+nav{
+	top: 0;
+	width: 100%;
+	height:3rem;
+	background:darkblue;
+	position:fixed;
+	z-index: 5;
+}
+nav span{
+	font-family:cursive;
+	font-size:35px;
+	color: white;
+	padding-left: 1.5rem;
+	cursor:pointer;
+} 
+nav span:hover{
+	border-bottom:palegoldenrod 12px solid ;
+} 
+.liste {
+	float: right;
+    justify-content:space-between ;
+	margin-right:5rem;
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+	 margin-left: 1.5rem;
+   
+}
+nav ul li a{
+	color: white;
+   text-decoration: none;
+}
+nav ul li a:hover{
+	color:darkblue;
+    background:white;
+    padding:0.3rem;
+    border-radius:4px;
+    transition: .8s;
+}
+#content{
+	position:relative;
+	margin-top:4rem;
+	justify-content: center;
+	text-align: center;
+	color: whitesmoke;
+	font-family:Arial;
+	
+}
+#presetation{
+	display: grid;
+	position: absolute;
+	justify-content: center;
+	justify-items: center;
+}
+#presetation h1{
+	background: darkblue;
+	text-align: center;
+	color: white;
+	width: auto;
+	padding:0.5rem;
+	border-radius: 5px;
+}
+
+#books{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom:5rem;
+	margin-left:5%;
+}
+.book {
+    margin-left: 5px;
+     margin-bottom: 5px;
+	background: white;
+	border-radius: 8px;
+}
+
+.book img{
+    
+	height: 15rem;
+}
+.book img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    margin-top:1.5rem;
+}
+.book h4{
+ color: darkblue;
+text-align: center;
+font-weight: bolder;
+font-family:helvetica;
+}
+footer{
+	margin-top: 5rem;
+	position:fixed;
+	bottom:0;
+	height:3rem;
+	width: 100%;
+	 background:darkblue;
+	 text-align: center;
+	 color: white;
+}
+
+
+@media (max-width:700px){
+ 
+	nav ul li {
+    display: none;
+}
+
+}

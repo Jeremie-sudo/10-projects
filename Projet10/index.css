@@ -1,0 +1,49 @@
+body{
+	background: whitesmoke;
+}
+.cube{
+	position: relative;
+	margin: 25% 40%;
+	transform-style: preserve-3d;
+    transform: rotateY(30deg) rotateZ(30deg) ;
+    animation: turn 25s infinite linear;
+
+}
+.face{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	opacity: 0.7;
+}
+#haut{
+	background: url(img1.jpg) no-repeat center/cover;
+	transform:translateY(-100px) rotateX(90deg);
+}
+#bas{
+	background: url(img2.jpg) no-repeat center/cover;
+	transform:translateY(100px) rotateX(90deg);
+}
+#droit{
+	background: url(img3.jpg) no-repeat center/cover;
+	transform: translateX(100px) rotateY(90deg);
+}
+#gauche{
+	background: url(img4.jpg) no-repeat center/cover;
+	transform: translateX(-100px) rotateY(90deg);
+}
+#facev{
+	background: url(img5.jpg) no-repeat center/cover;
+	transform:translateZ(100px);
+}
+#facef{
+	background: url(img6.jpg) no-repeat center/cover;
+	transform:translateZ(-100px);
+}
+@keyframes turn{
+  from {
+  	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to{
+  	transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}

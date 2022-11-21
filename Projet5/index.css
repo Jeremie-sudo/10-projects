@@ -1,0 +1,48 @@
+body{
+    display:grid;
+    justify-content:center;
+    padding:0 ;
+}
+.calc{
+     height:20rem;
+     width:15rem;
+     border: 2px solid black;
+     border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+     "res res res res"
+     "7 8 9 on"
+     "6 5 4 cl"
+     "1 2 3 cl"
+     "0 pt et mlt"
+     "pls mns eq eq"
+    ;
+}
+.btn{
+    background: black;
+    color: white;
+    font-family: monospace;
+    border: 1px solid white;
+}
+.allume{
+    background:darkcyan;
+}
+#res{
+
+    grid-area:res;
+    margin: 0;
+    text-align:right;
+    padding: 0.5rem;
+}
+
+#cl{
+    grid-area: cl;
+}
+#on{
+    grid-area:on;
+}
+#eq{
+    grid-area:eq
+}

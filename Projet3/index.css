@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+	display:grid;
+	justify-items: center;
+}
+.container{
+	color: white;
+	background: #2d1e6d;
+  width: 60%;
+  margin:50px;
+  padding: 20px;
+  border-radius:10px;
+
+}
+.container h2{
+	text-align: center;
+}
+.container .framework{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+
+}
+.img-code img{
+	 filter:grayscale(var(--grc))sepia(var(--sp))brightness(var(--bg))contrast(var(--cn))hue-rotate(var(--hg));
+}
+.img-code .gnc{
+	 background:#5b5b72;
+	 padding: 10px;
+	 border-radius: 5px;
+}

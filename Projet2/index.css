@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+	display:flex;
+	justify-content: center;
+	justify-items: center;
+	background: teal;
+	color: white;
+}
+.main{
+	margin-top: 152px;
+	width: 50%;
+   border:2px solid white;
+   border-radius: 15px;
+   display: grid;
+   justify-items: center;
+   justify-content: center;
+   padding:1rem;
+}
+.main img{
+	height: 100px;
+	width: 100px;
+	border-radius:50%;
+}
+button{
+	border-radius: 5px;
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
+	margin:5px;
+}

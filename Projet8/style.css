@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body{
+	background:url(py1.jpg) ;
+	background-size: cover;
+    padding: 0;
+    margin: 0;
+    text-transform:capitalize;
+    font-family:Poppins;
+    display: flex;
+    justify-content: center;
+}
+
+.abs {
+	
+	 width: 100%;
+	 height: 100vh;
+	 display: flex;
+	 justify-content: space-between;
+}
+
+.abs img {
+	height:250px;
+}
+.abs1 {
+	position:absolute;
+	animation:movenaruto 2s infinite;
+
+
+}
+.abs2 {
+	position: absolute;
+	animation:movetoriko 2s infinite;
+	
+}
+
+/** animation de naruto**/
+@keyframes movetoriko {
+	0%{
+		
+	
+		top:250px;
+        left:100px;
+
+
+	}
+	50%{
+		
+		left:150px;
+		top:0px;
+	}
+
+	100%{
+		background:darkorange;
+		left:900px;
+		top:0px;
+	}
+
+}
+
+/** animation de naruto**/
+@keyframes movenaruto {
+	0%{
+		
+		top: 15px;
+        right:0;
+
+	}
+	5%{
+		
+		right:125px;
+		top:50px;
+	}
+	15%{
+		
+		right:150px;
+		top:0px;
+	}
+	30%{
+		
+		right:200px;
+		top:50px;
+	}
+	60%{
+		
+		right:225px;
+		top:0px;
+	}
+	80%{
+		
+		right:250px;
+		top:800px;
+	}
+	100%{
+	
+		right:800px;
+		top:50px;
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+const countryArray={
+	 1:"Afghanistan",
+	 2:"Afrique du Sud",
+	 3:"Allemagne",
+	 4:"Dominique",
+	 5:"Erythrée",
+	 6:"Fidji",
+	 7:"France",
+	 8:"Guinée",
+	 9:"Guyana",
+	 10:"Zambie",
+	 11:"Ukraine",
+	 12:"République Centrafricaine",
+	 13:"Ghana",
+	 14:"Guatemala",
+	 15:"Géorgie",
+	 16:"Burundi",
+	 17:"Burkina Faso"
+}
+const capital = {
+      1:"Kaboul",
+      2:"Pretoria",
+      3:"Berlin",
+      4:"Roseau",
+      5:"Asmara",
+      6:"Suva",
+      7:"Paris",
+      8:"Conakry",
+      9:"Georgetown",
+      10:"Lusaka",
+      11:"Kiev",
+      12:"Bangui",
+      13:"Accra",
+      14:"Guatemala",
+      15:"Tbilissi",
+      16:"Bujumbura",
+      17:"Ouagadougou"
+}

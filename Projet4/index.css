@@ -1,0 +1,103 @@
+body{
+	padding:0;
+	margin: 0; 
+	background:black;
+	text-transform: capitalize;
+	font-family:monospace;
+	color:green;
+}
+.header {
+	margin-left:1rem;
+    list-style: none;
+	display: flex;
+
+}
+.header ul{
+     margin: 1rem;
+	display: flex;
+	
+}
+.header ul li{
+   
+   font-size:20px;
+   list-style:none;
+   margin-left:2rem;
+   cursor: pointer;
+}
+.intro {
+	display: flex;
+	justify-content: space-around;
+   
+}
+.intro img{
+   height:15rem;
+   float:right;
+   margin-right:1.5rem;
+   
+}
+.accueil h2{
+	position: absolute;
+	top:15%;
+	text-align: center;
+
+}
+.title{
+	justify-self: center;
+	text-align: center;
+	height: 1rem;
+}
+#logo{
+	font-size:2.5rem;
+	   cursor: pointer;
+}
+#logo:hover{
+	color: red;
+	transition: 1s;
+}
+
+.hackers {
+	display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	background:black;
+	flex-wrap:wrap;
+	justify-content: center;
+
+
+}
+.hacker{
+ margin:1rem;
+ border: 1px solid beige;
+ justify-items: center;
+ display: grid;
+ padding:0.5rem;
+
+ 
+}
+.hacker:hover{
+ transform: scale(1.02);
+ border:1px solid green;
+ 
+}
+.hacker h4{
+color: white;
+text-align: center;
+
+
+}
+.hacker button{
+	text-transform: capitalize;
+	height:1.5rem;
+    color:white;
+    background:red;
+    border: none;
+    border-radius:4px;
+    font-family:monospace;
+
+}
+.hacker button:hover{
+	color:white;
+	background:green;
+	transition:0.8s;
+	font-family:monospace;
+
+}
